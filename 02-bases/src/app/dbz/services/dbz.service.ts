@@ -19,16 +19,22 @@ export class DbzService {
     power: 7500
   }];
 
-  onNewCharacter(character: Character):void{
+  addCharacter(character: Character):void{
     //console.log('MainPage');
     //console.log(character);
 
-    this.characters.push(character);
+    //this.characters.push(character);
+    const newCharacter: Character = { id: uuid(), ...character }
+    this.characters.push(newCharacter);
 
   }
-
+  /*
   onDeleteCharacter(index:number){
    this.characters.splice(index,1);
+  }
+  */
+  deleteCharacterById(id:string){
+    this.characters = this.characters.filter(character => character.id != id);
   }
 
 }
