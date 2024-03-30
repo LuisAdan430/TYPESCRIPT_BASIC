@@ -1,0 +1,21 @@
+Ejecutar generador de build para proyecto Angular version 17
+---> ng build
+Pagina para servidor de prueba http:
+--->https://www.npmjs.com/package/http-server
+Comando a utilizar estar en super usuario:
+---> npm install --global http-server
+pegar ruta donde se encuentre el dist generado por el ng build
+Y ejecutar el siguiente comando:
+--->http-serve -o
+para levantar proyecto de prueba.
+
+Comandos a ejucutar para realizar prueba.
+------- [Generar Build] ------
+ cd C:\Users\AIT-USR\Documents\Angular\typescript_basic\TYPESCRIPT_BASIC\02-bases
+ np build
+------- [Instalar el servidor de prueba Http-serve] -----
+ cd C:\Users\AIT-USR\Documents\Angular\typescript_basic\TYPESCRIPT_BASIC\Npm
+ npm install --global http-server
+ cd C:\Users\AIT-USR\Documents\Angular\typescript_basic\TYPESCRIPT_BASIC\02-bases
+ http-serve -o
+---------------------------------------------
